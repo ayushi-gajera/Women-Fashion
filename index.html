@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Women Fashion</title>
+</head>
+
+<body>
+    <section class="container">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- logo -->
+            <div class="logo">
+                <img src="/images/logo.jpg" alt="logo">
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links">
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Shop By</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Label Collection</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+
+            <!-- icons -->
+            <div class="icons">
+                <!-- search icon -->
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <!-- profile icon -->
+                <i class="fa-regular fa-user"></i>
+
+                <!-- cart icon -->
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </nav>
+
+        <div>
+            <ul class="all-images">
+                <li><a href="#">
+                        <div class="image-container1">
+                            <img src="/images/sarees.jpg" alt="#" height="180px" width="140px">
+                            <p>Sarees</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="image-container1">
+                            <img src="/images/lehenga.jpg" alt="#" height="180px" width="140px">
+                            <p>Lehenga</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="image-container1">
+                            <img src="/images/fusion-wear.jpg" alt="#" height="180px" width="140px">
+                            <p>Fusion Wear</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="image-container1">
+                            <img src="/images/sharara.jpg" alt="#" height="180px" width="140px">
+                            <p>Sharara</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="image-container1">
+                            <img src="/images/co-ords.jpg" alt="#" height="180px" width="140px">
+                            <p>Co-ords</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="image-container1">
+                            <img src="/images/kurta-sets.jpg" alt="#" height="180px" width="140px">
+                            <p>Kurta Sets</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <div class="image-container1">
+                            <img src="/images/gown.jpg" alt="#" height="180px" width="140px">
+                            <p>Gowns</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card-section">
+            <br>
+            <h1>NEW ARRIVALS</h1>
+
+            <div class="cards">
+                <aside class="filter-container">
+
+                    <!-- Filter Section -->
+
+                    <p class="filter">&nbsp;Filter: </p>
+                    <br>
+                    <div class="filter-row">
+                        <p class="filter-header" onclick="toggleFilter('priceFilter', this)">
+                            Price <span class="arrow">&#9656;</span>
+                        </p>
+                        <div id="priceFilter" class="filter-content">
+                            <p>The highest price is ₹10,950.00</p>
+                            <div>
+                                ₹ <input type="text" placeholder="From">
+                                ₹ <input type="text" placeholder="To">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-row">
+                        <p class="filter-header" onclick="toggleFilter('productTypeFilter', this)">
+                            Product Type <span class="arrow">&#9656;</span>
+                        </p>
+                        <div id="productTypeFilter" class="filter-content">
+                            <label>
+                                <input type="checkbox">
+                                FUSION WEAR (23)
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-row">
+                        <p class="filter-header" onclick="toggleFilter('sizeFilter', this)">
+                            Size <span class="arrow">&#9656;</span>
+                        </p>
+                        <div id="sizeFilter" class="filter-content">
+                            <label>
+                                <input type="checkbox">
+                                Small
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                Medium
+                            </label>
+                            <label>
+                                <input type="checkbox">
+                                Large
+                            </label>
+                        </div>
+                </aside>
+
+                <!-- product-cards -->
+
+                <div class="product-cards">
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img1.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Green anarkali suit with weaving dupatta</h3>
+                        <p class="price">₹ 4,950.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img2.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Dilbara green 3pc indowestern cape dress</h3>
+                        <p class="price">₹ 5,550.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img3.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Yellow ombre 3pc indowestern co-ord set</h3>
+                        <p class="price">₹ 4,500.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img4.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Dark maroon anarkali border suit with weaving dupatta</h3>
+                        <p class="price">₹ 4,950.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img5.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Noor Aqua blue embellished sharara suit set</h3>
+                        <p class="price">₹ 5,950.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img6.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Glam sequence Black 3pc cape drape lehenga</h3>
+                        <p class="price">₹ 9,950.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img7.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Simrat Blue step tulip Punjabi suit</h3>
+                        <p class="price">₹ 3,550.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img8.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Floral print mehendi green 3pc indowestern dress</h3>
+                        <p class="price">₹ 3,950.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+
+                        <!-- Badge -->
+                        <span class="badge">NEW ARRIVAL</span>
+
+                        <!-- Image Container -->
+                        <div class="image-container">
+                            <img src="/images/img9.jpg" alt="#" height="400px">
+                        </div>
+
+                        <!-- Product Details -->
+                        <h3 class="product-title">Kaynath Purple thread Embroided lehenga set</h3>
+                        <p class="price">₹ 10,550.00</p>
+
+                        <!-- Size Options -->
+                        <div class="sizes">
+                            <button>S</button>
+                            <button>M</button>
+                            <button>L</button>
+                            <button>XL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div>
+                    <h2>Categories</h2>
+                    <ul>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Seller</a></li>
+                        <li><a href="#">Festive</a></li>
+                        <li><a href="#">Co-ord Sets</a></li>
+                        <li><a href="#">Kurta Sets</a></li>
+                        <li><a href="#">Shop By Events</a></li>
+                        <li><a href="#">Label Collection</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Information</h2>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Refer and Earn</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund, Exchanges and Returns</a></li>
+                        <li><a href="#">Fabric & Print Disclaimer</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Terms of Service
+                            </a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Discover</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Meet The Founder</a></li>
+                        <li><a href="#">Hearts Of Modernsahiba</a></li>
+                        <li><a href="#">Exchange Request</a></li>
+                        <li><a href="#">Collaborate With Us</a></li>
+                        <li><a href="#">Arrange Video Call</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Customer Service</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> &nbsp; abcd road, Mumbai, Pin- 100000</li>
+                        <li><i class="fa-solid fa-phone"></i> &nbsp; Call us at <a href="#"> +91 xxxxx xxxxx</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> &nbsp; Email: <a href="#">support@cloths.com</a></li>
+                    </ul>
+                    <ul class="social-media">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
